@@ -1,0 +1,21 @@
+#section {
+  margin: 0;
+  background-color: #cccfd4ae;
+  max-width: 100%;
+  position: absolute;
+  left: 250px;
+  top: 0;
+  transition: 0.5s;
+}
+@media (max-width: 1199.98px) {
+  #section {
+    left: 0;
+    top: 100px;
+  }
+}
+@media (max-width: 991.98px) {
+  #section {
+    left: 0;
+    top: 170px;
+  }
+}

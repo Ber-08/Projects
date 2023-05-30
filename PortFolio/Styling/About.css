@@ -1,0 +1,239 @@
+.about-container {
+  margin: 0;
+  width: 100%;
+  padding: 26px;
+  transition: 0.5s;
+}
+.about-heading {
+  margin-bottom: 30px;
+}
+.about-heading .heading {
+  font-family: "Roboto Mono";
+  font-size: 40px;
+  font-weight: 600;
+  position: relative;
+}
+.about-heading .heading::before {
+  content: " ";
+  height: 4px;
+  width: 100px;
+  background: linear-gradient(to right, var(--theme-color), #cccfd4ae);
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+.about-heading .heading::after {
+  content: " ";
+  height: 4px;
+  width: 50px;
+  background: linear-gradient(to right, var(--theme-color), #cccfd4ae);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 5px;
+}
+
+.about-heading .job {
+  margin: 25px 0;
+}
+.about-heading .job span {
+  color: var(--theme-color);
+  font-weight: bold;
+}
+.about-heading .about-para {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.unord-list1 ul,
+.unord-list2 ul {
+  list-style: none;
+  padding: 0;
+}
+.unord-list1 ul li,
+.unord-list2 ul li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.272);
+}
+
+/** /////////////////////////////////// */
+/*! PROGRESS-BAR STARTS */
+/*? PROGRESS-BAR STARTS */
+/** /////////////////////////////////// */
+
+.progress-content {
+  width: 100%;
+  background-color: grey;
+  height: 10px;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+.percent {
+  background-color: var(--theme-color);
+  height: 100%;
+  border-radius: 10px;
+  position: relative;
+}
+.progress-content:first-child .percent {
+  width: 95%;
+}
+.progress-content:nth-child(2) .percent {
+  width: 90%;
+}
+.progress-content:nth-child(3) .percent {
+  width: 70%;
+}
+.progress-content:last-child .percent {
+  width: 85%;
+}
+
+.lang,
+.percentage {
+  position: absolute;
+  top: -25px;
+}
+.lang {
+  left: 0;
+}
+.percentage {
+  right: 0;
+}
+
+/** /////////////////////////////////// */
+/*! PROGRESS-BAR ENDS */
+/*? PROGRESS-BAR ENDS */
+/** /////////////////////////////////// */
+
+#about-button {
+  margin-top: 30px;
+  margin-left: 100px;
+  width: 50%;
+}
+.button-content {
+  display: flex;
+  gap: 30px;
+}
+.about-button .button-content .download-cv,
+.about-button .hire-me {
+  background-color: var(--theme-color);
+  width: 150px;
+  height: 50px;
+  border-radius: 60px;
+  letter-spacing: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+/* ---------------------------------- */
+.edu-container {
+  margin-top: 20px;
+}
+
+.about-container .edu-content {
+  background-color: whitesmoke;
+  width: 100%;
+  height: auto;
+  margin-top: 30px;
+  border-radius: 10px;
+  box-shadow: 2px 4px 15px black;
+  padding: 20px 10px 20px 50px;
+}
+
+.edu-details {
+  position: relative;
+}
+
+.edu-details::before {
+  content: " ";
+  height: 100%;
+  width: 3px;
+  background-color: var(--theme-color);
+  position: absolute;
+  top: 2px;
+  left: -25px;
+}
+.edu-list {
+  margin-top: 50px;
+}
+
+.edu-list:first-child {
+  margin-top: 0;
+}
+
+.edu-list span {
+  margin-left: 10px;
+  position: relative;
+}
+.edu-list span::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--theme-color);
+  position: absolute;
+  top: 0;
+  left: -68px;
+}
+.edu-list h5 {
+  margin: 10px 0 0 0;
+  font-family: "Source Sans Pro";
+  font-weight: 600;
+}
+.edu-list p {
+  color: black;
+  font-size: 18px;
+}
+
+/** /////////////////////////////////// */
+/*!  MEDIA-TAB STARTS  */
+/*?  MEDIA-TAB STARTS  */
+/** /////////////////////////////////// */
+
+@media (max-width: 1199.98px) {
+  #about-button {
+    margin-left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+/** /////////////////////////////////// */
+/*!  MEDIA-TAB ENDS  */
+/*?  MEDIA-TAB ENDS  */
+/** /////////////////////////////////// */
+
+/* ------------------------------------ */
+
+/** /////////////////////////////////// */
+/*!  MEDIA-MOBILE STARTS  */
+/*?  MEDIA-MOBILE STARTS  */
+/** /////////////////////////////////// */
+
+@media (max-width: 991.98px) {
+  .about-container .about-content {
+    text-align: center;
+  }
+  .about-heading .heading::before,
+  .about-heading .heading::after {
+    display: none;
+  }
+  .unord-list1 ul,
+  .unord-list2 ul {
+    display: inline-block;
+    width: 80%;
+  }
+  .about-container .about-content .edu-container {
+    text-align: left;
+  }
+}
+
+/** /////////////////////////////////// */
+/*!  MEDIA-MOBILE ENDS  */
+/*?  MEDIA-MOBILE ENDS  */
+/** /////////////////////////////////// */

@@ -1,0 +1,146 @@
+#home-container {
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  padding: 26px;
+  transition: 0.5s;
+}
+.home-container {
+  /* display: none !important; */
+}
+.home-content {
+  padding: 50px;
+}
+.home-content .home-info .title {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.home-content .home-info .title .name {
+  font-family: "Moon Dance";
+  font-size: 40px;
+  font-weight: 600;
+  color: var(--theme-color);
+}
+
+.home-content .home-info .profession .typing {
+  font-family: "Roboto Mono";
+  color: var(--theme-color);
+}
+
+.home-objective p {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.home-content .toggle-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-content .bttn {
+  width: 180px;
+  height: 50px;
+  background-color: rgba(128, 0, 0, 0.256);
+  border-radius: 60px;
+  letter-spacing: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.home-content .bttn a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+  transition: 0.5s;
+}
+.home-content .bttn a:hover {
+  padding-left: 10px;
+  padding-right: 40px;
+}
+
+.home-content .bttn i {
+  padding: 14px;
+  background-color: var(--theme-color);
+  border-radius: 50%;
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translateX(0);
+  transform: translateY(-50%);
+  transition: 0.5s ease-in-out;
+}
+
+.home-content .bttn:hover i {
+  left: calc(100% - 47px);
+}
+
+.home-container .home-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home-container .home-image .side-image {
+  position: relative;
+}
+.home-container .home-image .side-image::before {
+  content: " ";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-left: 10px double var(--theme-color);
+  border-top: 10px double var(--theme-color);
+  top: -20px;
+  left: -20px;
+}
+.home-container .home-image .side-image::after {
+  content: " ";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-right: 10px double var(--theme-color);
+  border-bottom: 10px double var(--theme-color);
+  bottom: -20px;
+  right: -20px;
+}
+@media (max-width: 1399.98px) {
+  .home-content .home-info .title span {
+    display: block;
+    margin-top: 10px;
+  }
+}
+@media (max-width: 1199.98px) {
+  .home-content {
+    padding: 0;
+  }
+  .home-content .toggle-button {
+    display: flex;
+    justify-content: start;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .home-content {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  .home-objective p {
+    margin-bottom: 20px;
+  }
+  .home-content .toggle-button {
+    display: flex;
+    justify-content: center;
+  }
+  .home-container .home-image .side-image {
+    scale: 0.7;
+  }
+}

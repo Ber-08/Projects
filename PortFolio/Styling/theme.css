@@ -1,0 +1,71 @@
+.theme-container {
+  position: fixed;
+  top: 30px;
+  right: 20px;
+  width: 200px;
+  height: 80px;
+  background-color: #cccfd4fc;
+  box-shadow: 3px 5px 15px black;
+  transform: translateX(230px);
+  transition: 0.5s;
+}
+.open {
+  transform: translateX(0);
+}
+
+.theme-container .theme-switch,
+.theme-container .dark-theme {
+  position: absolute;
+  left: -60px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #cccfd4fa;
+  border: 2px solid var(--theme-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.theme-container .theme-switch {
+  top: 0;
+}
+
+.theme-container .dark-theme {
+  top: 45px;
+}
+.theme-container .theme-switch i,
+.theme-container .dark-theme i {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.theme-container h5 {
+  text-align: center;
+  margin: 3px 0;
+}
+.theme-container .span-parent {
+  height: 50%;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+.theme-container .span-parent span {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 2px solid black;
+  cursor: pointer;
+}
+.theme-container .span-parent span:first-child {
+  background-color: red;
+}
+.theme-container .span-parent span:nth-child(2) {
+  background-color: blue;
+}
+.theme-container .span-parent span:nth-child(3) {
+  background-color: mediumorchid;
+}
+.theme-container .span-parent span:last-child {
+  background-color: lawngreen;
+}

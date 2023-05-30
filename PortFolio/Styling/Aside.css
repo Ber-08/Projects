@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Inspiration&family=Moon+Dance&family=Prosto+One&family=Roboto+Mono:wght@600&family=Source+Sans+Pro:wght@600&family=Tangerine:wght@700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* ASIDE-SECTION */
+#aside {
+  background-color: whitesmoke;
+  position: fixed;
+  z-index: 10;
+  width: 250px;
+  height: 100vh;
+  margin: 0;
+  transition: 0.5s;
+}
+
+.aside .custom-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.aside .custom-logo p {
+  position: absolute;
+  font-family: "Prosto One";
+  font-size: 30px;
+  width: 120px;
+  text-align: center;
+}
+
+.aside .custom-logo p span {
+  font-family: "Inspiration";
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.aside .custom-logo p::before {
+  content: " ";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-left: 3px solid var(--theme-color);
+  border-top: 3px solid var(--theme-color);
+  top: 0;
+  left: 0;
+}
+
+.aside .custom-logo p::after {
+  content: " ";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-right: 3px solid var(--theme-color);
+  border-bottom: 3px solid var(--theme-color);
+  bottom: 0;
+  right: 0;
+}
+.aside .custom-list ul {
+  padding-top: 50px;
+}
+.aside .custom-list ul li {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.207);
+  padding-left: 9px;
+  padding-right: 5px;
+}
+.aside .custom-list ul li a {
+  color: black;
+  font-size: 20px;
+}
+
+.aside .custom-list ul li.active a {
+  color: var(--theme-color);
+}
+
+@media (max-width: 1199.98px) {
+  #aside {
+    margin: 0;
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    transition: 0.1s;
+    overflow: hidden;
+  }
+  #aside .custom-logo {
+    margin-top: 20px;
+  }
+  .custom-list .unorderlist {
+    margin: 0;
+    display: flex;
+  }
+  .aside .custom-list ul li {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 991.98px) {
+  #aside {
+    margin: 0;
+    width: 100vw;
+    height: 170px;
+  }
+  #aside .custom-logo {
+    margin-top: 60px;
+  }
+}
